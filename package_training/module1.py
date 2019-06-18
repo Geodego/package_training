@@ -6,5 +6,8 @@ def mult_numbers(x, y):
 def mult_three_numbers(x, y, z):
     return x*y*z
 
+def power_two(x):
+    return x^2
+
 a = mult_numbers(2,3)
 print(a)
