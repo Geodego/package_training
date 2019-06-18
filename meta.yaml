@@ -1,0 +1,26 @@
+{% set version = load_setup_py_data() %}
+
+package:
+  name: package_training
+  version: "{{ load_setup_py_data().version }}" # reads directly the version used in setup.py
+
+source:
+  path: ./
+
+build:
+  # the below script is used in the building process
+  script: python setup.py install --single-version-externally-managed --record=record.txt
+  noarch: python #
+  number: 0
+
+
+requirements:
+  run: #packages needed to run the project
+    - python
+  build: #build requirements: packages needed to run setup.py
+    - python
+    - setuptools
+
+about:
+  lisence_file: LICENSE
+  summary: 'Exemple of managing packages using conda'
