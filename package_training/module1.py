@@ -3,5 +3,8 @@ __all__ = 'mult_numbers'  #only mult_numbers can be imported
 def mult_numbers(x, y):
     return x*y
 
+def mult_three_numbers(x, y, z):
+    return x*y*z
+
 a = mult_numbers(2,3)
 print(a)
