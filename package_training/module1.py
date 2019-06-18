@@ -9,5 +9,8 @@ def mult_three_numbers(x, y, z):
 def power_two(x):
     return x^2
 
+def power_three(x):
+    return x^3
+
 a = mult_numbers(2,3)
 print(a)
