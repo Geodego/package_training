@@ -12,5 +12,8 @@ def power_two(x):
 def power_three(x):
     return x^3
 
+def power_four(x):
+    return x^4
+
 a = mult_numbers(2,3)
 print(a)
